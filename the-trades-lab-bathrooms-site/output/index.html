@@ -383,9 +383,12 @@
     <div id="scrubText" class="absolute inset-0 flex flex-col items-center justify-center text-center px-6" style="opacity:1;">
       <p id="heroEyebrow" class="text-brass font-medium tracking-[0.3em] sm:tracking-[0.34em] uppercase text-xs sm:text-sm mb-6 sm:mb-7">Luxury Bathroom Fitters · Manchester</p>
       <p class="lux-h text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading" style="text-shadow:0 2px 40px rgba(0,0,0,.6);">From dated<br>to <span class="text-brass italic">immaculate.</span></p>
-      <p class="text-white/90 text-base sm:text-lg md:text-xl mt-7 md:mt-8 max-w-2xl leading-relaxed" style="text-shadow:0 2px 20px rgba(0,0,0,.7);">We design, fit and renovate luxury bathrooms across Manchester — vetted, insured craftsmen, five-star results every single time.</p>
-      <a href="#contact" class="btn-lux inline-flex items-center gap-2 mt-10 md:mt-11 bg-brass text-navy font-semibold px-9 py-4 hover:bg-white shadow-xl">Get A Free Quote <span class="arw">&rarr;</span></a>
-      <p class="mt-6 flex items-center justify-center gap-2.5 text-white/85 text-sm" style="text-shadow:0 2px 14px rgba(0,0,0,.75);"><span class="text-brass tracking-[0.12em]">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated 5.0 by 37 Manchester homeowners &middot; No obligation</p>
+      <!-- These three appear only once the scroll-scrub transformation completes -->
+      <div id="heroReveal" class="flex flex-col items-center" style="opacity:0;">
+        <p class="text-white/90 text-base sm:text-lg md:text-xl mt-7 md:mt-8 max-w-2xl leading-relaxed" style="text-shadow:0 2px 20px rgba(0,0,0,.7);">We design, fit and renovate luxury bathrooms across Manchester — vetted, insured craftsmen, five-star results every single time.</p>
+        <a href="#contact" class="btn-lux inline-flex items-center gap-2 mt-10 md:mt-11 bg-brass text-navy font-semibold px-9 py-4 hover:bg-white shadow-xl">Get A Free Quote <span class="arw">&rarr;</span></a>
+        <p class="mt-6 flex items-center justify-center gap-2.5 text-white/85 text-sm" style="text-shadow:0 2px 14px rgba(0,0,0,.75);"><span class="text-brass tracking-[0.12em]">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated 5.0 by 37 Manchester homeowners &middot; No obligation</p>
+      </div>
     </div>
     <div id="scrubHint" class="scrub-hint">Scroll to see this bathroom transform &darr;</div>
     <div id="scrubBar" class="scrub-bar"></div>
@@ -469,17 +472,6 @@
         <h2 class="reveal lux-h text-4xl md:text-5xl lg:text-6xl">Your new bathroom in three simple steps</h2>
       </div>
       <p class="reveal text-gray-500 text-lg leading-relaxed mt-6 md:mt-0 md:max-w-xs md:pb-2">No juggling trades, no stress — we handle the lot.</p>
-    </div>
-    <!-- process timelapse (swap for the client's real install footage) -->
-    <div class="reveal mb-16 lg:mb-24">
-      <div class="cs-wrap relative overflow-hidden bg-navy" style="aspect-ratio:16/9;">
-        <video id="processVideo" class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="none"
-               poster="https://d8j0ntlcm91z4.cloudfront.net/user_34CXbjRpJoqi7YeN5SKPD8YlIwt/hf_20260613_165826_bda0f35a-8ce6-4380-a377-b432c03b2aef.png">
-          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_34CXbjRpJoqi7YeN5SKPD8YlIwt/hf_20260613_170515_73762cef-3a33-4f74-b7b5-e4a14eaf0688.mp4" type="video/mp4">
-        </video>
-        <span class="absolute top-4 left-4 z-10 text-[11px] font-semibold tracking-[0.18em] uppercase text-white px-4 py-2 rounded-[3px]" style="background:rgba(14,27,42,.55);backdrop-filter:blur(6px);">Watch the transformation</span>
-      </div>
-      <p class="text-gray-500 text-sm mt-5 tracking-wide">From strip-out to finished room — a real Onyx &amp; Oak bathroom fit, start to finish.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-12 md:gap-8 steps">
       <div class="reveal step text-center px-4">
@@ -616,24 +608,23 @@
     <div class="grid sm:grid-cols-3 gap-6 md:gap-8 stagger">
       <div class="reveal team-card lift">
         <div class="team-frame">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fm=jpg&amp;q=80&amp;w=900&amp;auto=format&amp;fit=crop" alt="Portrait of James W., Founder and Design Director" loading="lazy">
+          <img src="assets/team/james-w.jpg" alt="Portrait of James W., Founder and Design Director" loading="lazy">
           <div class="team-caption"><p class="font-semibold">James W.</p><p class="text-white/60 text-xs mt-0.5 tracking-wide">Founder &amp; Design Director</p></div>
         </div>
       </div>
       <div class="reveal team-card lift">
         <div class="team-frame">
-          <img src="https://images.unsplash.com/photo-1699899657680-421c2c2d5064?fm=jpg&amp;q=80&amp;w=900&amp;auto=format&amp;fit=crop" alt="Portrait of Laura B., Senior Bathroom Designer" loading="lazy">
+          <img src="assets/team/laura-b.jpg" alt="Portrait of Laura B., Senior Bathroom Designer" loading="lazy">
           <div class="team-caption"><p class="font-semibold">Laura B.</p><p class="text-white/60 text-xs mt-0.5 tracking-wide">Senior Bathroom Designer</p></div>
         </div>
       </div>
       <div class="reveal team-card lift">
         <div class="team-frame">
-          <img src="https://images.unsplash.com/photo-1586297381256-f5efbc8b3a5b?fm=jpg&amp;q=80&amp;w=900&amp;auto=format&amp;fit=crop" alt="Portrait of Tom A., Lead Installation Fitter" loading="lazy">
+          <img src="assets/team/tom-a.jpg" alt="Portrait of Tom A., Lead Installation Fitter" loading="lazy">
           <div class="team-caption"><p class="font-semibold">Tom A.</p><p class="text-white/60 text-xs mt-0.5 tracking-wide">Lead Installation Fitter</p></div>
         </div>
       </div>
     </div>
-    <p class="reveal text-center text-gray-400 text-sm mt-12 tracking-wide">Example team — swap in your own headshots, names and roles.</p>
   </div>
 </section>
 
@@ -850,15 +841,6 @@
     }), {threshold:0});
     io.observe(heroCta);
   })();
-  // process timelapse: only load + play while it's on screen (keeps the page light)
-  (function(){
-    const v = document.getElementById('processVideo'); if(!v) return;
-    const io = new IntersectionObserver(es => es.forEach(e => {
-      if(e.isIntersecting){ if(v.preload!=='auto') v.preload='auto'; v.play().catch(()=>{}); }
-      else v.pause();
-    }), {threshold:.25});
-    io.observe(v);
-  })();
   // OUR WORK strip: prev/next buttons scroll the portfolio track by one card
   (function(){
     const track = document.getElementById('owTrack');
@@ -952,6 +934,7 @@
     const sec = document.getElementById('hero');
     const cv = document.getElementById('frameCanvas');
     const txt = document.getElementById('scrubText');
+    const revealEl = document.getElementById('heroReveal');
     const scrim = document.getElementById('scrubScrim');
     const hint = document.getElementById('scrubHint');
     const label = document.getElementById('baLabel');
@@ -995,11 +978,14 @@
         const reveal = Math.min(1, Math.max(0, (prog-SCRUB_END)/(1-SCRUB_END)));
         const textOp = Math.max(intro, reveal);
         if(txt) txt.style.opacity = String(textOp);
+        // supporting copy + CTA + rating: hidden on load, appear only as the scrub completes
+        if(revealEl) revealEl.style.opacity = String(reveal);
         if(scrim) scrim.style.background = 'rgba(14,27,42,' + (0.12 + textOp*0.34) + ')';
         if(hint) hint.style.opacity = String(Math.max(0, 1 - reveal*2.2));
         cv.style.transform = 'scale(' + (1.06 - 0.06*f) + ')';
         if(bar) bar.style.width = (f*100) + '%';
-        if(label){ const isAfter = f > 0.9; label.textContent = isAfter ? 'After' : 'Before'; label.style.background = isAfter ? 'rgba(201,162,39,.94)' : 'rgba(14,27,42,.6)'; label.style.color = isAfter ? '#0E1B2A' : '#fff'; label.style.opacity = String(Math.max(0, 1 - reveal)); }
+        // 'Before' fades out with the headline as you scroll; 'After' fades in with the copy at the end
+        if(label){ const isAfter = reveal > 0; label.textContent = isAfter ? 'After' : 'Before'; label.style.background = isAfter ? 'rgba(201,162,39,.94)' : 'rgba(14,27,42,.6)'; label.style.color = isAfter ? '#0E1B2A' : '#fff'; label.style.opacity = String(isAfter ? reveal : intro); }
       }
       function onScroll(){ if(!raf) raf = requestAnimationFrame(paint); }
       function refresh(){ sizeCanvas(); positionHero(); last = -1; paint(); }
