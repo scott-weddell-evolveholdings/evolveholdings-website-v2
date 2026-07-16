@@ -1,0 +1,6 @@
+# Generated lead-magnet packages (rebuild from output/ instead of committing binaries)
+downloads/
+
+# OS junk
+.DS_Store
+Thumbs.db
